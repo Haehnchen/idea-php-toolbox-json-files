@@ -1,0 +1,55 @@
+{
+  "registrar":[
+    {
+      "provider":"http_methods",
+      "language":"php",
+      "signature":[
+        "Symfony\\Component\\BrowserKit\\Client:request"
+      ]
+    },
+    {
+      "provider":"client_server_parameter",
+      "language":"php",
+      "signatures":[
+        {
+          "class": "Symfony\\Component\\BrowserKit\\Client",
+          "method": "request",
+          "type": "array_key",
+          "index": 4
+        }
+      ]
+    },
+    {
+      "provider":"http_header",
+      "language":"php",
+      "signatures":[
+        {
+          "class": "Symfony\\Component\\HttpFoundation\\Response",
+          "method": "__construct",
+          "type": "array_key",
+          "index": 2
+        }
+      ]
+    },
+    {
+      "provider":"content_types",
+      "language":"php",
+      "signatures":[
+        {
+          "class": "Symfony\\Component\\HttpFoundation\\Response",
+          "method": "__construct",
+          "index": 2,
+          "array": "Content-Type"
+        }
+      ]
+    }
+  ],
+  "providers":[
+    {
+      "name": "client_server_parameter",
+      "lookup_strings": [
+        "HTTP_HOST", "HTTPS", "HTTP_REFERER", "CONTENT_TYPE"
+      ]
+    }
+  ]
+}

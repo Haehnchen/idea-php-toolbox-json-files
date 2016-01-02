@@ -1,0 +1,36 @@
+{
+  "registrar":[
+    {
+      "signature":[
+        "ReflectionProperty:__construct",
+        "ReflectionProperty:__construct",
+        "ReflectionMethod:__construct",
+        "class_exists"
+      ],
+      "provider":"ClassInterface",
+      "language":"php"
+    }
+  ],
+  "providers":[
+    {
+      "name": "http_methods",
+      "lookup_strings": [
+        "POST", "GET", "PUT", "DELETE",
+        "HEAD", "CONNECT", "OPTIONS", "TRACE"
+      ]
+    },
+    {
+      "name": "http_header",
+      "lookup_strings": [
+        "Content-Type"
+      ]
+    },
+    {
+      "name": "content_types",
+      "lookup_strings": [
+        "text/html", "application/json", "application/javascript",
+        "application/xml", "text/xml", "image/svg+xml"
+      ]
+    }
+  ]
+}

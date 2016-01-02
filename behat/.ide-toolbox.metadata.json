@@ -1,0 +1,21 @@
+{
+  "registrar":[
+    {
+      "signature":[
+        "Behat\\Behat\\Context\\Environment\\ContextEnvironment:hasContextClass",
+        "Behat\\Behat\\Context\\Environment\\InitializedContextEnvironment:getContext"
+      ],
+      "provider":"behat_context_classes",
+      "language":"php"
+    }
+  ],
+  "providers": [
+    {
+      "name": "behat_context_classes",
+      "source": {
+        "contributor": "sub_classes",
+        "parameter": "Behat\\Behat\\Context\\Context"
+      }
+    }
+  ]
+}

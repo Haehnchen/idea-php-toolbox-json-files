@@ -1,0 +1,27 @@
+{
+  "registrar":[
+    {
+      "signature":[
+        "PHPUnit_Framework_MockObject_Generator:getMock",
+        "PHPUnit_Framework_TestCase:getMock",
+        "PHPUnit_Framework_TestCase:getMockBuilder",
+        "PHPUnit_Framework_Assert:assertInstanceOf",
+        "PHPUnit_Framework_Assert:isInstanceOf",
+        "PHPUnit_Framework_Assert:assertNotInstanceOf",
+        "PHPUnit_Framework_TestCase:getMockForAbstractClass",
+        "PHPUnit_Framework_Constraint_IsInstanceOf:__construct",
+        "PHPUnit_Framework_TestCase:setExpectedException",
+        "PHPUnit_Framework_MockObject_MockBuilder:__construct:1"
+      ],
+      "signatures":[
+        {
+          "class": "PHPUnit_Framework_TestCase",
+          "method": "getMock",
+          "type": "type"
+        }
+      ],
+      "provider":"ClassInterface",
+      "language":"php"
+    }
+  ]
+}
