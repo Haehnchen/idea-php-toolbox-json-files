@@ -18,9 +18,14 @@
           "class": "PHPUnit_Framework_TestCase",
           "method": "getMock",
           "type": "type"
+        },
+        {
+          "class": "PHPUnit_Framework_TestCase",
+          "method": "getMockBuilder",
+          "type": "type"
         }
       ],
-      "provider":"ClassInterface",
+      "provider":"class_interface",
       "language":"php"
     }
   ]

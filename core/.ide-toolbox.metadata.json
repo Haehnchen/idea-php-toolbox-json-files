@@ -7,7 +7,7 @@
         "ReflectionMethod:__construct",
         "class_exists"
       ],
-      "provider":"ClassInterface",
+      "provider":"class_interface",
       "language":"php"
     }
   ],
