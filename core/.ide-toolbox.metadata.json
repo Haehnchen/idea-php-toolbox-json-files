@@ -2,10 +2,11 @@
   "registrar":[
     {
       "signature":[
-        "ReflectionProperty:__construct",
+        "ReflectionClass:__construct",
         "ReflectionProperty:__construct",
         "ReflectionMethod:__construct",
-        "class_exists"
+        "class_exists",
+        "interface_exists"
       ],
       "provider":"class_interface",
       "language":"php"
