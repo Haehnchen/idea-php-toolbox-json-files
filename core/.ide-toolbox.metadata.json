@@ -1,36 +1,152 @@
 {
-  "registrar":[
-    {
-      "signature":[
-        "ReflectionProperty:__construct",
-        "ReflectionProperty:__construct",
-        "ReflectionMethod:__construct",
-        "class_exists"
-      ],
-      "provider":"class_interface",
-      "language":"php"
-    }
-  ],
-  "providers":[
-    {
-      "name": "http_methods",
-      "lookup_strings": [
-        "POST", "GET", "PUT", "DELETE",
-        "HEAD", "CONNECT", "OPTIONS", "TRACE"
-      ]
-    },
-    {
-      "name": "http_header",
-      "lookup_strings": [
-        "Content-Type"
-      ]
-    },
-    {
-      "name": "content_types",
-      "lookup_strings": [
-        "text/html", "application/json", "application/javascript",
-        "application/xml", "text/xml", "image/svg+xml"
-      ]
-    }
-  ]
+    "registrar": [
+        {
+            "provider": "class_interface",
+            "language": "php",
+            "signature": [
+                "ReflectionClass:__construct",
+                "ReflectionProperty:__construct",
+                "ReflectionMethod:__construct",
+                "class_exists",
+                "interface_exists"
+            ]
+        },
+        {
+            "provider": "http_response_headers",
+            "language": "php",
+            "signature": [
+                "header",
+                "header_remove"
+            ]
+        }
+    ],
+    "providers": [
+        {
+            "name": "http_methods",
+            "lookup_strings": [
+                "POST",
+                "GET",
+                "PUT",
+                "PATCH",
+                "DELETE",
+                "HEAD",
+                "CONNECT",
+                "OPTIONS",
+                "TRACE"
+            ]
+        },
+        {
+            "name": "http_request_headers",
+            "lookup_strings": [
+                "Accept",
+                "Accept-Charset",
+                "Accept-Datetime",
+                "Accept-Encoding",
+                "Accept-Language",
+                "Authorization",
+                "Cache-Control",
+                "Connection",
+                "Content-Length",
+                "Content-MD5",
+                "Content-Type",
+                "Cookie",
+                "Date",
+                "Expect",
+                "From",
+                "Host",
+                "If-Match",
+                "If-Modified-Since",
+                "If-None-Match",
+                "If-Range",
+                "If-Unmodified-Since",
+                "Max-Forwards",
+                "Origin",
+                "Pragma",
+                "Proxy-Authorization",
+                "Range",
+                "Referer",
+                "TE",
+                "Upgrade",
+                "User-Agent",
+                "Via",
+                "Warning",
+                "DNT",
+                "Front-End-Https",
+                "Proxy-Connection",
+                "X-ATT-DeviceId",
+                "X-Csrf-Token",
+                "X-Forwarded-For",
+                "X-Forwarded-Host",
+                "X-Forwarded-Proto",
+                "X-Http-Method-Override",
+                "X-Requested-With",
+                "X-UIDH",
+                "X-Wap-Profile"
+            ]
+        },
+        {
+            "name": "http_response_headers",
+            "lookup_strings": [
+                "Accept-Patch",
+                "Accept-Ranges",
+                "Access-Control-Allow-Origin",
+                "Age",
+                "Allow",
+                "Cache-Control",
+                "Connection",
+                "Content-Disposition",
+                "Content-Encoding",
+                "Content-Language",
+                "Content-Length",
+                "Content-Location",
+                "Content-MD5",
+                "Content-Range",
+                "Content-Type",
+                "Date",
+                "ETag",
+                "Expires",
+                "Last-Modified",
+                "Link",
+                "Location",
+                "P3P",
+                "Pragma",
+                "Proxy-Authenticate",
+                "Public-Key-Pins",
+                "Refresh",
+                "Retry-After",
+                "Server",
+                "Set-Cookie",
+                "Status",
+                "Strict-Transport-Security",
+                "Trailer",
+                "Transfer-Encoding",
+                "TSV",
+                "Upgrade",
+                "Vary",
+                "Via",
+                "Warning",
+                "WWW-Authenticate",
+                "X-Frame-Options",
+                "Content-Security-Policy",
+                "X-Content-Security-Policy",
+                "X-WebKit-CSP",
+                "X-Content-Duration",
+                "X-Content-Type-Options",
+                "X-Powered-By",
+                "X-UA-Compatible",
+                "X-XSS-Protection"
+            ]
+        },
+        {
+            "name": "content_types",
+            "lookup_strings": [
+                "text/html",
+                "application/json",
+                "application/javascript",
+                "application/xml",
+                "text/xml",
+                "image/svg+xml"
+            ]
+        }
+    ]
 }
