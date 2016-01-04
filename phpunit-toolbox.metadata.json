@@ -1,0 +1,43 @@
+{
+    "registrar": [{
+        "language": "php",
+        "provider": "class_interface",
+        "signature": [
+            "PHPUnit_Framework_Assert::assertInstanceOf",
+            "PHPUnit_Framework_Assert::assertContainsOnlyInstancesOf",
+            "PHPUnit_Framework_TestCase::getMock",
+            "PHPUnit_Framework_TestCase::getMockForAbstractClass",
+            "PHPUnit_Framework_TestCase::getMockForTrait"
+        ],
+        "signatures": [{
+            "class": "PHPUnit_Framework_TestCase",
+            "method": "getMock",
+            "type": "type"
+        }, {
+            "class": "PHPUnit_Framework_TestCase",
+            "method": "getMockForAbstractClass",
+            "type": "type"
+        }, {
+            "class": "PHPUnit_Framework_TestCase",
+            "method": "getMockForTrait",
+            "type": "type"
+        }]
+    }, {
+        "language": "php",
+        "provider": "trait",
+        "signature": [
+            "PHPUnit_Framework_TestCase::getObjectForTrait"
+        ],
+        "signatures": [{
+            "class": "PHPUnit_Framework_TestCase",
+            "method": "getObjectForTrait",
+            "type": "type"
+        }]
+    }, {
+        "language": "php",
+        "provider": "exception_classes",
+        "signature": [
+            "PHPUnit_Framework_TestCase::setExpectedException"
+        ]
+    }]
+}

@@ -1,0 +1,10 @@
+{
+    "providers": [{
+        "language": "php",
+        "name": "exception_classes",
+        "source": {
+            "contributor": "sub_classes",
+            "parameter": "Exception"
+        }
+    }]
+}
