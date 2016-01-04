@@ -16,7 +16,20 @@
             "language": "php",
             "signature": [
                 "Symfony\\Component\\BrowserKit\\Client:request",
-                "Symfony\\Component\\HttpFoundation\\Request:isMethod"
+                "Symfony\\Component\\HttpFoundation\\Request:isMethod",
+                "Symfony\\Component\\Form\\FormConfigBuilderInterface:setMethod"
+            ]
+        },
+        {
+            "provider": "http_methods",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Symfony\\Bundle\\FrameworkBundle\\Controller\\Controller",
+                    "method": "createFormBuilder",
+                    "index": 1,
+                    "array": "method"
+                }
             ]
         },
         {
