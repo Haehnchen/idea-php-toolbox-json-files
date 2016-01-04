@@ -66,5 +66,24 @@
         "signature": [
             "PHPUnit_Framework_TestCase::setExpectedException"
         ]
+    }, {
+        "language": "php",
+        "provider": "internal_types",
+        "signature": [
+            "PHPUnit_Framework_Assert::assertAttributeInternalType",
+            "PHPUnit_Framework_Assert::assertAttributeContainsOnly",
+            "PHPUnit_Framework_Assert::assertAttributeNotContainsOnly",
+            "PHPUnit_Framework_Assert::assertContainsOnly",
+            "PHPUnit_Framework_Assert::assertInternalType",
+            "PHPUnit_Framework_Assert::assertNotAttributeInternalType",
+            "PHPUnit_Framework_Assert::assertNotContainsOnly",
+            "PHPUnit_Framework_Assert::assertNotInternalType",
+
+            "PHPUnit_Framework_Assert::containsOnly",
+            "PHPUnit_Framework_Constraint_TraversableContainsOnly::__construct",
+
+            "PHPUnit_Framework_Assert::isType",
+            "PHPUnit_Framework_Constraint_IsType::__construct",
+        ]
     }]
 }

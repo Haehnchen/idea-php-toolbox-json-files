@@ -6,5 +6,19 @@
             "contributor": "sub_classes",
             "parameter": "Exception"
         }
+    }, {
+        "language": "php",
+        "name": "internal_types",
+        "lookup_strings": [
+            "array",
+            "bool",
+            "callback",
+            "float",
+            "int",
+            "null",
+            "object",
+            "resource",
+            "string"
+        ]
     }]
 }
