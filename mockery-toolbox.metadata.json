@@ -1,0 +1,15 @@
+{
+    "registrar": [{
+        "language": "php",
+        "provider": "class_interface",
+        "signature": [
+            "Mockery::mock",
+            "Mockery::type"
+        ],
+        "signatures": [{
+            "class": "Mockery",
+            "method": "mock",
+            "type": "type"
+        }]
+    }]
+}
