@@ -3,15 +3,38 @@
         "language": "php",
         "provider": "class_interface",
         "signature": [
-            "PHPUnit_Framework_Assert::assertInstanceOf",
+            "PHPUnit_Framework_Assert::assertAttributeInstanceOf",
+            "PHPUnit_Framework_Assert::assertAttributeNotInstanceOf",
+            "PHPUnit_Framework_Assert::assertClassHasAttribute:1",
+            "PHPUnit_Framework_Assert::assertClassHasStaticAttribute:1",
+            "PHPUnit_Framework_Assert::assertClassNotHasAttribute:1",
+            "PHPUnit_Framework_Assert::assertClassNotHasStaticAttribute:1",
             "PHPUnit_Framework_Assert::assertContainsOnlyInstancesOf",
+            "PHPUnit_Framework_Assert::assertInstanceOf",
+            "PHPUnit_Framework_Assert::assertNotInstanceOf",
+
+            "PHPUnit_Framework_Assert::isInstanceOf",
+            "PHPUnit_Framework_Assert::containsOnlyInstancesOf",
+            "PHPUnit_Framework_Constraint_TraversableContainsOnly::__construct",
+
             "PHPUnit_Framework_TestCase::getMock",
+            "PHPUnit_Framework_TestCase::getMockBuilder",
             "PHPUnit_Framework_TestCase::getMockForAbstractClass",
-            "PHPUnit_Framework_TestCase::getMockForTrait"
+            "PHPUnit_Framework_TestCase::getMockForTrait",
+            "PHPUnit_Framework_TestCase::getMockWithoutInvokingTheOriginalConstructor",
+
+            "PHPUnit_Framework_TestCase::getStaticAttribute",
+            "PHPUnit_Framework_TestCase::readAttribute",
+
+            "PHPUnit_Framework_TestCase::prophesize"
         ],
         "signatures": [{
             "class": "PHPUnit_Framework_TestCase",
             "method": "getMock",
+            "type": "type"
+        }, {
+            "class": "PHPUnit_Framework_TestCase",
+            "method": "getMockBuilder",
             "type": "type"
         }, {
             "class": "PHPUnit_Framework_TestCase",
@@ -20,6 +43,10 @@
         }, {
             "class": "PHPUnit_Framework_TestCase",
             "method": "getMockForTrait",
+            "type": "type"
+        }, {
+            "class": "PHPUnit_Framework_TestCase",
+            "method": "getMockWithoutInvokingTheOriginalConstructor",
             "type": "type"
         }]
     }, {
