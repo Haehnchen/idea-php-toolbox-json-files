@@ -41,6 +41,21 @@
             ]
         },
         {
+            "provider": "iterator_classes",
+            "language": "php",
+            "signature": [
+                "ArrayObject:__construct:2",
+                "ArrayObject:setIteratorClass"
+            ]
+        },
+        {
+            "provider": "session_handler_classes",
+            "language": "php",
+            "signature": [
+                "session_set_save_handler"
+            ]
+        },
+        {
             "provider": "http_response_headers",
             "language": "php",
             "signature": [
@@ -182,6 +197,20 @@
             "source": {
                 "contributor": "sub_classes",
                 "parameter": "SplFileInfo"
+            }
+        },
+        {
+            "name": "iterator_classes",
+            "source": {
+                "contributor": "sub_classes",
+                "parameter": "Iterator"
+            }
+        },
+        {
+            "name": "session_handler_classes",
+            "source": {
+                "contributor": "sub_classes",
+                "parameter": "SessionHandlerInterface"
             }
         }
     ]
