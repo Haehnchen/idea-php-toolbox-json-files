@@ -1,22 +1,24 @@
 {
     "registrar": [
-//        {
-//            "provider": "class_interface",
-//            "language": "php",
-//            "signatures": [
-//                {
-//                    "class": "Symfony\\Component\\HttpKernel\\DependencyInjection\\Extension",
-//                    "method": "addClassesToCompile",
-//                    "type": "array_value"
-//                }
-//            ]
-//        },
+        //        {
+        //            "provider": "class_interface",
+        //            "language": "php",
+        //            "signatures": [
+        //                {
+        //                    "class": "Symfony\\Component\\HttpKernel\\DependencyInjection\\Extension",
+        //                    "method": "addClassesToCompile",
+        //                    "type": "array_value"
+        //                }
+        //            ]
+        //        },
         {
             "provider": "http_methods",
             "language": "php",
             "signature": [
                 "Symfony\\Component\\BrowserKit\\Client:request",
+                "Symfony\\Component\\BrowserKit\\Request:__construct:1",
                 "Symfony\\Component\\HttpFoundation\\Request:isMethod",
+                "Symfony\\Component\\HttpFoundation\\Request:setMethod",
                 "Symfony\\Component\\Form\\FormConfigBuilderInterface:setMethod"
             ]
         },
@@ -30,6 +32,18 @@
                     "index": 1,
                     "array": "method"
                 }
+                //,
+                //                {
+                //                    "class": "Symfony\\Component\\Routing\\Route",
+                //                    "method": "__construct",
+                //                    "index": 6,
+                //                    "type": "array_value"
+                //                },
+                //                {
+                //                    "class": "Symfony\\Component\\Routing\\Route",
+                //                    "method": "setMethods",
+                //                    "type": "array_value"
+                //                }
             ]
         },
         {
