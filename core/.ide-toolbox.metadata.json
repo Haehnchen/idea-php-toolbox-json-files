@@ -5,10 +5,39 @@
             "language": "php",
             "signature": [
                 "ReflectionClass:__construct",
+                "ReflectionClass:implementsInterface", //TODO: better use interfaces-only provider here
+                "ReflectionClass:isSubclassOf",
                 "ReflectionProperty:__construct",
                 "ReflectionMethod:__construct",
+                "__autoload",
+                "class_alias",
+                "class_alias:1",
                 "class_exists",
-                "interface_exists"
+                "get_class_methods",
+                "get_class_vars",
+                "get_parent_class",
+                "interface_exists", //TODO: better use interfaces-only provider here
+                "is_a",
+                "is_a:1",
+                "is_subclass_of",
+                "is_subclass_of:1",
+                "method_exists",
+                "property_exists", //TODO: better use class-only provider here
+                "class_implements",
+                "class_parents",
+                "class_uses",
+                "spl_autoload_call",
+                "spl_autoload"
+            ]
+        },
+        {
+            "provider": "spl_fileinfo_classes",
+            "language": "php",
+            "signature": [
+                "SplFileInfo:getFileInfo",
+                "SplFileInfo:getPathInfo",
+                "SplFileInfo:setFileClass",
+                "SplFileInfo:setInfoClass"
             ]
         },
         {
@@ -147,6 +176,13 @@
                 "text/xml",
                 "image/svg+xml"
             ]
+        },
+        {
+            "name": "spl_fileinfo_classes",
+            "source": {
+                "contributor": "sub_classes",
+                "parameter": "SplFileInfo"
+            }
         }
     ]
 }
