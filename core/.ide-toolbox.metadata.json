@@ -5,29 +5,48 @@
             "language": "php",
             "signature": [
                 "ReflectionClass:__construct",
-                "ReflectionClass:implementsInterface", //TODO: better use interfaces-only provider here
                 "ReflectionClass:isSubclassOf",
                 "ReflectionProperty:__construct",
                 "ReflectionMethod:__construct",
                 "__autoload",
                 "class_alias",
                 "class_alias:1",
-                "class_exists",
                 "get_class_methods",
-                "get_class_vars",
-                "get_parent_class",
-                "interface_exists", //TODO: better use interfaces-only provider here
                 "is_a",
                 "is_a:1",
                 "is_subclass_of",
                 "is_subclass_of:1",
                 "method_exists",
-                "property_exists", //TODO: better use class-only provider here
                 "class_implements",
-                "class_parents",
                 "class_uses",
                 "spl_autoload_call",
                 "spl_autoload"
+            ]
+        },
+        {
+            "provider": "class",
+            "language": "php",
+            "signature": [
+                "class_exists",
+                "class_parents",
+                "get_class_vars",
+                "get_parent_class",
+                "property_exists"
+            ]
+        },
+        {
+            "provider": "interface",
+            "language": "php",
+            "signature": [
+                "ReflectionClass:implementsInterface",
+                "interface_exists"
+            ]
+        },
+        {
+            "provider": "trait",
+            "language": "php",
+            "signature": [
+                "trait_exists"
             ]
         },
         {
