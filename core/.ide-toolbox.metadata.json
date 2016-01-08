@@ -81,6 +81,15 @@
                 "header",
                 "header_remove"
             ]
+        },
+        {
+            "provider": "file_opening_modes",
+            "language": "php",
+            "signature": [
+                "fopen:1",
+                "popen:1",
+                "SplFileInfo:openFile"
+            ]
         }
     ],
     "providers": [
@@ -231,6 +240,51 @@
                 "contributor": "sub_classes",
                 "parameter": "SessionHandlerInterface"
             }
+        },
+        {
+            "name": "file_opening_modes",
+            "items": [
+                {
+                    "lookup_string": "r",
+                    "type_text": "Read from beginning"
+                },
+                {
+                    "lookup_string": "r+",
+                    "type_text": "Read/write from beginning"
+                },
+                {
+                    "lookup_string": "w",
+                    "type_text": "Create/overwrite from beginning"
+                },
+                {
+                    "lookup_string": "w+",
+                    "type_text": "Create/overwrite/read from beginning"
+                },
+                {
+                    "lookup_string": "a",
+                    "type_text": "Create/append at end"
+                },
+                {
+                    "lookup_string": "a+",
+                    "type_text": "Create/append/read at end"
+                },
+                {
+                    "lookup_string": "x",
+                    "type_text": "Create/write from beginning (fails if file exists)"
+                },
+                {
+                    "lookup_string": "x+",
+                    "type_text": "Create/write/read from beginning (fails if file exists)"
+                },
+                {
+                    "lookup_string": "c",
+                    "type_text": "Create/write from beginning"
+                },
+                {
+                    "lookup_string": "c+",
+                    "type_text": "Create/write/read from beginning"
+                }
+            ]
         }
     ]
 }
