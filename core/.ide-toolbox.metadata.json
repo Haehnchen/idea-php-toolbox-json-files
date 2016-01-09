@@ -235,6 +235,13 @@
             }
         },
         {
+            "name": "exception_classes",
+            "source": {
+                "contributor": "sub_classes",
+                "parameter": "Throwable"
+            }
+        },
+        {
             "name": "session_handler_classes",
             "source": {
                 "contributor": "sub_classes",
