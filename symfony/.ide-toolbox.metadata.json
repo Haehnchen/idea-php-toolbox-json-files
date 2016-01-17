@@ -1,55 +1,111 @@
 {
-  "registrar":[
-    {
-      "provider":"http_methods",
-      "language":"php",
-      "signature":[
-        "Symfony\\Component\\BrowserKit\\Client:request"
-      ]
-    },
-    {
-      "provider":"client_server_parameter",
-      "language":"php",
-      "signatures":[
+    "registrar": [
         {
-          "class": "Symfony\\Component\\BrowserKit\\Client",
-          "method": "request",
-          "type": "array_key",
-          "index": 4
-        }
-      ]
-    },
-    {
-      "provider":"http_header",
-      "language":"php",
-      "signatures":[
+            "provider": "http_methods",
+            "language": "php",
+            "signature": [
+                "Symfony\\Component\\BrowserKit\\Client:request",
+                "Symfony\\Component\\BrowserKit\\Request:__construct:1",
+                "Symfony\\Component\\HttpFoundation\\Request:isMethod",
+                "Symfony\\Component\\HttpFoundation\\Request:setMethod",
+                "Symfony\\Component\\Form\\FormConfigBuilderInterface:setMethod"
+            ]
+        },
         {
-          "class": "Symfony\\Component\\HttpFoundation\\Response",
-          "method": "__construct",
-          "type": "array_key",
-          "index": 2
-        }
-      ]
-    },
-    {
-      "provider":"content_types",
-      "language":"php",
-      "signatures":[
+            "provider": "http_methods",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Symfony\\Bundle\\FrameworkBundle\\Controller\\Controller",
+                    "method": "createFormBuilder",
+                    "index": 1,
+                    "array": "method"
+                }
+            ]
+        },
         {
-          "class": "Symfony\\Component\\HttpFoundation\\Response",
-          "method": "__construct",
-          "index": 2,
-          "array": "Content-Type"
+            "provider": "http_response_headers",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\Response",
+                    "method": "__construct",
+                    "index": 2,
+                    "type": "array_key"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\Response",
+                    "method": "create",
+                    "index": 2,
+                    "type": "array_key"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\HeaderBag",
+                    "method": "__construct",
+                    "type": "array_key"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\HeaderBag",
+                    "method": "replace",
+                    "type": "array_key"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\HeaderBag",
+                    "method": "add",
+                    "type": "array_key"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\HeaderBag",
+                    "method": "get"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\HeaderBag",
+                    "method": "set"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\HeaderBag",
+                    "method": "has"
+                },
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\HeaderBag",
+                    "method": "contains"
+                }
+            ]
+        },
+        {
+            "provider": "content_types",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Symfony\\Component\\HttpFoundation\\Response",
+                    "method": "__construct",
+                    "index": 2,
+                    "array": "Content-Type"
+                }
+            ]
+        },
+        {
+            "provider": "client_server_parameter",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Symfony\\Component\\BrowserKit\\Client",
+                    "method": "request",
+                    "index": 4,
+                    "type": "array_key"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "providers":[
-    {
-      "name": "client_server_parameter",
-      "lookup_strings": [
-        "HTTP_HOST", "HTTPS", "HTTP_REFERER", "CONTENT_TYPE"
-      ]
-    }
-  ]
+    ],
+    "providers": [
+        {
+            "name": "client_server_parameter",
+            "lookup_strings": [
+                "HTTP_HOST",
+                "HTTPS",
+                "HTTP_REFERER",
+                "CONTENT_TYPE"
+            ]
+        }
+    ]
 }
