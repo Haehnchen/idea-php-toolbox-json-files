@@ -1,0 +1,35 @@
+{
+    "registrar": [
+        {
+            "provider": "http_methods",
+            "language": "php",
+            "signature": [
+                "Symfony\\Component\\BrowserKit\\Client:request",
+                "Symfony\\Component\\BrowserKit\\Request:__construct:1"
+            ]
+        },
+        {
+            "provider": "client_server_parameter",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Symfony\\Component\\BrowserKit\\Client",
+                    "method": "request",
+                    "index": 4,
+                    "type": "array_key"
+                }
+            ]
+        }
+    ],
+    "providers": [
+        {
+            "name": "client_server_parameter",
+            "lookup_strings": [
+                "HTTP_HOST",
+                "HTTPS",
+                "HTTP_REFERER",
+                "CONTENT_TYPE"
+            ]
+        }
+    ]
+}

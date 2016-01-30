@@ -1,0 +1,29 @@
+{
+    "registrar": [
+        {
+            "language": "php",
+            "provider": "class",
+            "signature": [
+                "Doctrine\\Common\\Persistence\\ManagerRegistry::getManagerForClass",
+                "Doctrine\\Common\\Persistence\\ObjectManager::find",
+                "Doctrine\\Common\\Persistence\\ObjectManager::getClassMetadata",
+                "Doctrine\\Common\\Persistence\\ObjectManager::getRepository"
+            ],
+            "signatures": [
+                {
+                    "class": "Doctrine\\Common\\Persistence\\ManagerRegistry",
+                    "method": "getManagerForClass",
+                    "type": "type"
+                }, {
+                    "class": "Doctrine\\Common\\Persistence\\ObjectManager",
+                    "method": "find",
+                    "type": "type"
+                }, {
+                    "class": "Doctrine\\Common\\Persistence\\ObjectManager",
+                    "method": "getRepository",
+                    "type": "type"
+                }
+            ]
+        }
+    ]
+}
