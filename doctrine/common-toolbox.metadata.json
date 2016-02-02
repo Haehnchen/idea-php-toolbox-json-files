@@ -2,7 +2,7 @@
     "registrar": [
         {
             "language": "php",
-            "provider": "class",
+            "provider": "doctrine.models",
             "signature": [
                 "Doctrine\\Common\\Persistence\\ManagerRegistry::getManagerForClass",
                 "Doctrine\\Common\\Persistence\\ObjectManager::find",
@@ -11,16 +11,8 @@
             ],
             "signatures": [
                 {
-                    "class": "Doctrine\\Common\\Persistence\\ManagerRegistry",
-                    "method": "getManagerForClass",
-                    "type": "type"
-                }, {
                     "class": "Doctrine\\Common\\Persistence\\ObjectManager",
                     "method": "find",
-                    "type": "type"
-                }, {
-                    "class": "Doctrine\\Common\\Persistence\\ObjectManager",
-                    "method": "getRepository",
                     "type": "type"
                 }
             ]
