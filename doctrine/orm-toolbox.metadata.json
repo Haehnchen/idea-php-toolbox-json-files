@@ -4,7 +4,6 @@
             "language": "php",
             "provider": "doctrine.models",
             "signature": [
-                "Doctrine\\ORM\\EntityManagerInterface::copy",
                 "Doctrine\\ORM\\EntityManagerInterface::getPartialReference",
                 "Doctrine\\ORM\\EntityManagerInterface::getReference"
             ],
