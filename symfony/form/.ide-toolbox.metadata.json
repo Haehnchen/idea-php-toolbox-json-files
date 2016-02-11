@@ -1,0 +1,39 @@
+{
+    "registrar": [
+        {
+            "language": "php",
+            "provider": "class",
+            "signature": [
+                "Symfony\\Component\\Form\\FormFactoryInterface::createBuilderForProperty",
+                "Symfony\\Component\\Form\\FormFactoryInterface::createForProperty"
+            ]
+        },
+        {
+            "language": "php",
+            "provider": "symfony_formtype_classes",
+            "signature": [
+                "Symfony\\Component\\Form\\FormFactoryInterface::create",
+                "Symfony\\Component\\Form\\FormFactoryInterface::createBuilder",
+                "Symfony\\Component\\Form\\FormFactoryInterface::createNamed:1",
+                "Symfony\\Component\\Form\\FormFactoryInterface::createNamedBuilder:1"
+            ]
+        },
+        {
+            "provider": "http_methods",
+            "language": "php",
+            "signature": [
+                "Symfony\\Component\\Form\\FormConfigBuilderInterface:setMethod"
+            ]
+        }
+    ],
+    "providers": [
+        {
+            "language": "php",
+            "name": "symfony_formtype_classes",
+            "source": {
+                "contributor": "sub_classes",
+                "parameter": "Symfony\\Component\\Form\\FormTypeInterface"
+            }
+        }
+    ]
+}

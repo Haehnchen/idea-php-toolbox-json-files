@@ -1,18 +1,33 @@
 {
     "registrar": [
         {
-            "provider": "class_interface",
             "language": "php",
+            "provider": "class_interface",
             "signature": [
-                "PHPUnit_Framework_MockObject_Generator:getMock",
-                "PHPUnit_Framework_TestCase:getMock",
-                "PHPUnit_Framework_TestCase:getMockBuilder",
-                "PHPUnit_Framework_Assert:assertInstanceOf",
-                "PHPUnit_Framework_Assert:isInstanceOf",
-                "PHPUnit_Framework_Assert:assertNotInstanceOf",
-                "PHPUnit_Framework_TestCase:getMockForAbstractClass",
-                "PHPUnit_Framework_Constraint_IsInstanceOf:__construct",
-                "PHPUnit_Framework_MockObject_MockBuilder:__construct:1"
+                "PHPUnit_Framework_Assert::assertAttributeInstanceOf",
+                "PHPUnit_Framework_Assert::assertAttributeNotInstanceOf",
+                "PHPUnit_Framework_Assert::assertClassHasAttribute:1",
+                "PHPUnit_Framework_Assert::assertClassHasStaticAttribute:1",
+                "PHPUnit_Framework_Assert::assertClassNotHasAttribute:1",
+                "PHPUnit_Framework_Assert::assertClassNotHasStaticAttribute:1",
+                "PHPUnit_Framework_Assert::assertContainsOnlyInstancesOf",
+                "PHPUnit_Framework_Assert::assertInstanceOf",
+                "PHPUnit_Framework_Assert::assertNotInstanceOf",
+
+                "PHPUnit_Framework_Assert::isInstanceOf",
+                "PHPUnit_Framework_Assert::containsOnlyInstancesOf",
+                "PHPUnit_Framework_Constraint_TraversableContainsOnly::__construct",
+
+                "PHPUnit_Framework_TestCase::getMock",
+                "PHPUnit_Framework_TestCase::getMockBuilder",
+                "PHPUnit_Framework_TestCase::getMockForAbstractClass",
+                "PHPUnit_Framework_TestCase::getMockForTrait",
+                "PHPUnit_Framework_TestCase::getMockWithoutInvokingTheOriginalConstructor",
+
+                "PHPUnit_Framework_TestCase::getStaticAttribute",
+                "PHPUnit_Framework_TestCase::readAttribute",
+
+                "PHPUnit_Framework_TestCase::prophesize"
             ],
             "signatures": [
                 {
@@ -24,14 +39,63 @@
                     "class": "PHPUnit_Framework_TestCase",
                     "method": "getMockBuilder",
                     "type": "type"
+                },
+                {
+                    "class": "PHPUnit_Framework_TestCase",
+                    "method": "getMockForAbstractClass",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit_Framework_TestCase",
+                    "method": "getMockForTrait",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit_Framework_TestCase",
+                    "method": "getMockWithoutInvokingTheOriginalConstructor",
+                    "type": "type"
                 }
             ]
         },
         {
-            "provider": "exception_classes",
             "language": "php",
+            "provider": "trait",
             "signature": [
-                "PHPUnit_Framework_TestCase:setExpectedException"
+                "PHPUnit_Framework_TestCase::getObjectForTrait"
+            ],
+            "signatures": [
+                {
+                    "class": "PHPUnit_Framework_TestCase",
+                    "method": "getObjectForTrait",
+                    "type": "type"
+                }
+            ]
+        },
+        {
+            "language": "php",
+            "provider": "exception_classes",
+            "signature": [
+                "PHPUnit_Framework_TestCase::setExpectedException"
+            ]
+        },
+        {
+            "language": "php",
+            "provider": "internal_types",
+            "signature": [
+                "PHPUnit_Framework_Assert::assertAttributeInternalType",
+                "PHPUnit_Framework_Assert::assertAttributeContainsOnly",
+                "PHPUnit_Framework_Assert::assertAttributeNotContainsOnly",
+                "PHPUnit_Framework_Assert::assertContainsOnly",
+                "PHPUnit_Framework_Assert::assertInternalType",
+                "PHPUnit_Framework_Assert::assertNotAttributeInternalType",
+                "PHPUnit_Framework_Assert::assertNotContainsOnly",
+                "PHPUnit_Framework_Assert::assertNotInternalType",
+
+                "PHPUnit_Framework_Assert::containsOnly",
+                "PHPUnit_Framework_Constraint_TraversableContainsOnly::__construct",
+
+                "PHPUnit_Framework_Assert::isType",
+                "PHPUnit_Framework_Constraint_IsType::__construct",
             ]
         }
     ]

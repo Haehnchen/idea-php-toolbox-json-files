@@ -1,0 +1,29 @@
+{
+    "registrar": [
+        {
+            "language": "php",
+            "provider": "doctrine.models",
+            "signature": [
+                "Doctrine\\ORM\\EntityManagerInterface::getPartialReference",
+                "Doctrine\\ORM\\EntityManagerInterface::getReference"
+            ],
+            "signatures": [
+                {
+                    "class": "Doctrine\\ORM\\EntityManagerInterface",
+                    "method": "copy",
+                    "type": "type"
+                },
+                {
+                    "class": "Doctrine\\ORM\\EntityManagerInterface",
+                    "method": "getPartialReference",
+                    "type": "type"
+                },
+                {
+                    "class": "Doctrine\\ORM\\EntityManagerInterface",
+                    "method": "getReference",
+                    "type": "type"
+                }
+            ]
+        }
+    ]
+}

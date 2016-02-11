@@ -4,11 +4,8 @@
             "provider": "http_methods",
             "language": "php",
             "signature": [
-                "Symfony\\Component\\BrowserKit\\Client:request",
-                "Symfony\\Component\\BrowserKit\\Request:__construct:1",
                 "Symfony\\Component\\HttpFoundation\\Request:isMethod",
-                "Symfony\\Component\\HttpFoundation\\Request:setMethod",
-                "Symfony\\Component\\Form\\FormConfigBuilderInterface:setMethod"
+                "Symfony\\Component\\HttpFoundation\\Request:setMethod"
             ]
         },
         {
@@ -82,29 +79,6 @@
                     "index": 2,
                     "array": "Content-Type"
                 }
-            ]
-        },
-        {
-            "provider": "client_server_parameter",
-            "language": "php",
-            "signatures": [
-                {
-                    "class": "Symfony\\Component\\BrowserKit\\Client",
-                    "method": "request",
-                    "index": 4,
-                    "type": "array_key"
-                }
-            ]
-        }
-    ],
-    "providers": [
-        {
-            "name": "client_server_parameter",
-            "lookup_strings": [
-                "HTTP_HOST",
-                "HTTPS",
-                "HTTP_REFERER",
-                "CONTENT_TYPE"
             ]
         }
     ]

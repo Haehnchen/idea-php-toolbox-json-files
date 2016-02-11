@@ -1,0 +1,21 @@
+{
+    "registrar": [
+        {
+            "language": "php",
+            "provider": "doctrine.models",
+            "signature": [
+                "Doctrine\\Common\\Persistence\\ManagerRegistry::getManagerForClass",
+                "Doctrine\\Common\\Persistence\\ObjectManager::find",
+                "Doctrine\\Common\\Persistence\\ObjectManager::getClassMetadata",
+                "Doctrine\\Common\\Persistence\\ObjectManager::getRepository"
+            ],
+            "signatures": [
+                {
+                    "class": "Doctrine\\Common\\Persistence\\ObjectManager",
+                    "method": "find",
+                    "type": "type"
+                }
+            ]
+        }
+    ]
+}

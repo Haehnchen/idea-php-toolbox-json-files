@@ -1,0 +1,16 @@
+{
+    "registrar": [
+        {
+            "provider": "http_methods",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Symfony\\Bundle\\FrameworkBundle\\Controller\\Controller",
+                    "method": "createFormBuilder",
+                    "index": 1,
+                    "array": "method"
+                }
+            ]
+        }
+    ]
+}
