@@ -90,6 +90,13 @@
                 "popen:1",
                 "SplFileInfo:openFile"
             ]
+        },
+        {
+            "provider": "php.functions",
+            "language": "php",
+            "signature": [
+                "array_map"
+            ]
         }
     ],
     "providers": [
