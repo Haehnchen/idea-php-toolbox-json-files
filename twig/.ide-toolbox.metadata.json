@@ -1,7 +1,7 @@
 {
     "registrar": [
         {
-            "provider": "twig_environment_options",
+            "provider": "twig.environment_options",
             "language": "php",
             "signatures": [
                 {
@@ -13,7 +13,7 @@
             ]
         },
         {
-            "provider": "twig_extensions",
+            "provider": "twig.extensions",
             "language": "php",
             "signature": [
                 "Twig_Environment:hasExtension",
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "provider": "twig_simplefilter_options",
+            "provider": "twig.simplefilter_options",
             "language": "php",
             "signatures": [
                 {
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "provider": "twig_simplefunction_options",
+            "provider": "twig.simplefunction_options",
             "language": "php",
             "signatures": [
                 {
@@ -46,7 +46,7 @@
             ]
         },
         {
-            "provider": "twig_simpletest_options",
+            "provider": "twig.simpletest_options",
             "language": "php",
             "signatures": [
                 {
@@ -58,7 +58,7 @@
             ]
         },
         {
-            "provider": "twig_escaping_strategies",
+            "provider": "twig.escaping_strategies",
             "language": "twig",
             "signature": [
                 "e",
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "provider": "twig_escaping_strategies",
+            "provider": "twig.escaping_strategies",
             "language": "php",
             "signatures": [
                 {
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "provider": "twig_template_classes",
+            "provider": "twig.template_classes",
             "language": "php",
             "signature": [
                 "Twig_Environment:setBaseTemplateClass"
@@ -104,21 +104,21 @@
     ],
     "providers": [
         {
-            "name": "twig_extensions",
+            "name": "twig.extensions",
             "source": {
                 "contributor": "return",
                 "parameter": "Twig_ExtensionInterface:getName"
             }
         },
         {
-            "name": "twig_template_classes",
+            "name": "twig.template_classes",
             "source": {
                 "contributor": "sub_classes",
                 "parameter": "Twig_TemplateInterface"
             }
         },
         {
-            "name": "twig_escaping_strategies",
+            "name": "twig.escaping_strategies",
             "items": [
                 {
                     "lookup_string": "html",
@@ -153,7 +153,7 @@
             ]
         },
         {
-            "name": "twig_environment_options",
+            "name": "twig.environment_options",
             "defaults": {
                 "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
             },
@@ -201,7 +201,7 @@
             ]
         },
         {
-            "name": "twig_simplefilter_options",
+            "name": "twig.simplefilter_options",
             "defaults": {
                 "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
             },
@@ -259,7 +259,7 @@
             ]
         },
         {
-            "name": "twig_simplefunction_options",
+            "name": "twig.simplefunction_options",
             "defaults": {
                 "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
             },
@@ -307,7 +307,7 @@
             ]
         },
         {
-            "name": "twig_simpletest_options",
+            "name": "twig.simpletest_options",
             "defaults": {
                 "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
             },
@@ -335,7 +335,7 @@
             ]
         },
         {
-            "name": "twig_round_methods",
+            "name": "twig.round_methods",
             "lookup_strings": [
                 "common",
                 "ceil",
