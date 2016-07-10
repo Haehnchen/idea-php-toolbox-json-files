@@ -1,0 +1,346 @@
+{
+    "registrar": [
+        {
+            "provider": "twig_environment_options",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Twig_Environment",
+                    "method": "__construct",
+                    "index": 1,
+                    "type": "array_key"
+                }
+            ]
+        },
+        {
+            "provider": "twig_extensions",
+            "language": "php",
+            "signature": [
+                "Twig_Environment:hasExtension",
+                "Twig_Environment:getExtension",
+                "Twig_Environment:removeExtension"
+            ]
+        },
+        {
+            "provider": "twig_simplefilter_options",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Twig_SimpleFilter",
+                    "method": "__construct",
+                    "index": 2,
+                    "type": "array_key"
+                }
+            ]
+        },
+        {
+            "provider": "twig_simplefunction_options",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Twig_SimpleFunction",
+                    "method": "__construct",
+                    "index": 2,
+                    "type": "array_key"
+                }
+            ]
+        },
+        {
+            "provider": "twig_simpletest_options",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Twig_SimpleTest",
+                    "method": "__construct",
+                    "index": 2,
+                    "type": "array_key"
+                }
+            ]
+        },
+        {
+            "provider": "twig_escaping_strategies",
+            "language": "twig",
+            "signature": [
+                "e",
+                "escape"
+            ]
+        },
+        {
+            "provider": "twig_escaping_strategies",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Twig_Extension_Escaper",
+                    "method": "__construct"
+                },
+                {
+                    "class": "Twig_Extension_Escaper",
+                    "method": "setDefaultStrategy"
+                },
+                {
+                    "class": "Twig_Extension_Core",
+                    "method": "setEscaper"
+                },
+                {
+                    "function": "twig_escape_filter",
+                    "index": 2
+                }
+            ]
+        },
+        {
+            "provider": "twig_template_classes",
+            "language": "php",
+            "signature": [
+                "Twig_Environment:setBaseTemplateClass"
+            ]
+        },
+        {
+            "provider": "timezones",
+            "language": "php",
+            "signature": [
+                "Twig_Extension_Core:setTimezone"
+            ]
+        }
+    ],
+    "providers": [
+        {
+            "name": "twig_extensions",
+            "source": {
+                "contributor": "return",
+                "parameter": "Twig_ExtensionInterface:getName"
+            }
+        },
+        {
+            "name": "twig_template_classes",
+            "source": {
+                "contributor": "sub_classes",
+                "parameter": "Twig_TemplateInterface"
+            }
+        },
+        {
+            "name": "twig_escaping_strategies",
+            "items": [
+                {
+                    "lookup_string": "html",
+                    "icon": "com.intellij.util.PlatformIcons.XML_TAG_ICON",
+                    "target": "twig_escape_filter"
+                },
+                {
+                    "lookup_string": "js",
+                    "icon": "com.intellij.util.PlatformIcons.FUNCTION_ICON",
+                    "target": "twig_escape_filter"
+                },
+                {
+                    "lookup_string": "css",
+                    "icon": "com.intellij.icons.AllIcons$Xml.Css_class",
+                    "target": "twig_escape_filter"
+                },
+                {
+                    "lookup_string": "url",
+                    "icon": "com.intellij.util.PlatformIcons.WEB_ICON",
+                    "target": "twig_escape_filter"
+                },
+                {
+                    "lookup_string": "html_attr",
+                    "icon": "com.intellij.util.PlatformIcons.CLASS_INITIALIZER",
+                    "target": "twig_escape_filter"
+                },
+                {
+                    "lookup_string": "filename",
+                    "icon": "com.intellij.icons.AllIcons$FileTypes.Unknown",
+                    "target": "Twig_FileExtensionEscapingStrategy"
+                }
+            ]
+        },
+        {
+            "name": "twig_environment_options",
+            "defaults": {
+                "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
+            },
+            "items": [
+                {
+                    "lookup_string": "debug",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "charset",
+                    "tail_text": " => 'UTF-8'",
+                    "type_text": "string"
+                },
+                {
+                    "lookup_string": "base_template_class",
+                    "tail_text": " => 'Twig_Template'",
+                    "type_text": "string"
+                },
+                {
+                    "lookup_string": "cache",
+                    "tail_text": " => false",
+                    "type_text": "string|false"
+                },
+                {
+                    "lookup_string": "auto_reload",
+                    "tail_text": " => null",
+                    "type_text": "boolean|null"
+                },
+                {
+                    "lookup_string": "strict_variables",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "autoescape",
+                    "tail_text": " => 'html'",
+                    "type_text": "string|boolean"
+                },
+                {
+                    "lookup_string": "optimizations",
+                    "tail_text": " => -1",
+                    "type_text": "integer"
+                }
+            ]
+        },
+        {
+            "name": "twig_simplefilter_options",
+            "defaults": {
+                "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
+            },
+            "items": [
+                {
+                    "lookup_string": "needs_environment",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "needs_context",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "is_variadic",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "is_safe",
+                    "tail_text": " => null",
+                    "type_text": "string[]|null"
+                },
+                {
+                    "lookup_string": "is_safe_callback",
+                    "tail_text": " => null",
+                    "type_text": "callable|array|null"
+                },
+                {
+                    "lookup_string": "pre_escape",
+                    "tail_text": " => null",
+                    "type_text": "string|null"
+                },
+                {
+                    "lookup_string": "preserves_safety",
+                    "tail_text": " => null",
+                    "type_text": "string[]|null"
+                },
+                {
+                    "lookup_string": "node_class",
+                    "tail_text": " => 'Twig_Node_Expression_Filter'",
+                    "type_text": "string"
+                },
+                {
+                    "lookup_string": "deprecated",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "alternative",
+                    "tail_text": " => null",
+                    "type_text": "string|null"
+                }
+            ]
+        },
+        {
+            "name": "twig_simplefunction_options",
+            "defaults": {
+                "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
+            },
+            "items": [
+                {
+                    "lookup_string": "needs_environment",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "needs_context",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "is_variadic",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "is_safe",
+                    "tail_text": " => null",
+                    "type_text": "string[]|null"
+                },
+                {
+                    "lookup_string": "is_safe_callback",
+                    "tail_text": " => null",
+                    "type_text": "callable|array|null"
+                },
+                {
+                    "lookup_string": "node_class",
+                    "tail_text": " => 'Twig_Node_Expression_Function'",
+                    "type_text": "string"
+                },
+                {
+                    "lookup_string": "deprecated",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "alternative",
+                    "tail_text": " => null",
+                    "type_text": "string|null"
+                }
+            ]
+        },
+        {
+            "name": "twig_simpletest_options",
+            "defaults": {
+                "icon": "de.espend.idea.php.toolbox.PhpToolboxIcons.TOOLBOX"
+            },
+            "items": [
+                {
+                    "lookup_string": "is_variadic",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "node_class",
+                    "tail_text": " => 'Twig_Node_Expression_Test'",
+                    "type_text": "string"
+                },
+                {
+                    "lookup_string": "deprecated",
+                    "tail_text": " => false",
+                    "type_text": "boolean"
+                },
+                {
+                    "lookup_string": "alternative",
+                    "tail_text": " => null",
+                    "type_text": "string|null"
+                }
+            ]
+        },
+        {
+            "name": "twig_round_methods",
+            "lookup_strings": [
+                "common",
+                "ceil",
+                "floor"
+            ]
+        }
+    ]
+}
