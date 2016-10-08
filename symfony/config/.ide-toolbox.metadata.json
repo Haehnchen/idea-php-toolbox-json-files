@@ -1,0 +1,44 @@
+{
+    "registrar": [
+        {
+            "signatures": [
+                {
+                    "class": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "method": "prototype"
+                },
+                {
+                    "class": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "method": "prototype",
+                    "type": "type"
+                }
+            ],
+            "provider": "symfony.config_node_definitions",
+            "language": "php"
+        }
+    ],
+    "providers": [
+        {
+            "name": "symfony.config_node_definitions",
+            "items": [
+                {
+                    "lookup_string": "array",
+                    "icon": "com.jetbrains.php.PhpIcons.CLASS",
+                    "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "target": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition"
+                },
+                {
+                    "lookup_string": "scalar",
+                    "icon": "com.jetbrains.php.PhpIcons.CLASS",
+                    "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "target": "Symfony\\Component\\Config\\Definition\\Builder\\ScalarNodeDefinition"
+                },
+                {
+                    "lookup_string": "variable",
+                    "icon": "com.jetbrains.php.PhpIcons.CLASS",
+                    "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "target": "Symfony\\Component\\Config\\Definition\\Builder\\VariableNodeDefinition"
+                }
+            ]
+        }
+    ]
+}
