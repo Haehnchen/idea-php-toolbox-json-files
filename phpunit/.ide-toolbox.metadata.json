@@ -37,11 +37,6 @@
                 },
                 {
                     "class": "PHPUnit_Framework_TestCase",
-                    "method": "getMockBuilder",
-                    "type": "type"
-                },
-                {
-                    "class": "PHPUnit_Framework_TestCase",
                     "method": "getMockForAbstractClass",
                     "type": "type"
                 },
