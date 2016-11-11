@@ -18,6 +18,7 @@
                 "PHPUnit_Framework_Assert::containsOnlyInstancesOf",
                 "PHPUnit_Framework_Constraint_TraversableContainsOnly::__construct",
 
+                "PHPUnit_Framework_TestCase::createMock",
                 "PHPUnit_Framework_TestCase::getMock",
                 "PHPUnit_Framework_TestCase::getMockBuilder",
                 "PHPUnit_Framework_TestCase::getMockForAbstractClass",
@@ -30,6 +31,11 @@
                 "PHPUnit_Framework_TestCase::prophesize"
             ],
             "signatures": [
+                {
+                    "class": "PHPUnit_Framework_TestCase",
+                    "method": "createMock",
+                    "type": "type"
+                },
                 {
                     "class": "PHPUnit_Framework_TestCase",
                     "method": "getMock",
