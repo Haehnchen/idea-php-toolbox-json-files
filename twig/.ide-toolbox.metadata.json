@@ -88,6 +88,17 @@
             ]
         },
         {
+            "provider": "class",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Twig_Environment",
+                    "method": "getRuntime",
+                    "type": "type"
+                }
+            ]
+        },
+        {
             "provider": "twig.template_classes",
             "language": "php",
             "signature": [
