@@ -1,0 +1,47 @@
+{
+    "registrar": [
+        {
+            "provider": "http_methods",
+            "language": "php",
+            "signature": [
+                "Http\\Message\\RequestFactory::createRequest"
+            ]
+        },
+        {
+            "provider": "http_request_headers",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Http\\Message\\RequestFactory",
+                    "method": "createRequest",
+                    "index": 2,
+                    "type": "array_key"
+                }
+            ]
+        },
+        {
+            "provider": "http_response_headers",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Http\\Message\\ResponseFactory",
+                    "method": "createResponse",
+                    "index": 2,
+                    "type": "array_key"
+                }
+            ]
+        },
+        {
+            "provider": "content_types",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Http\\Message\\RequestFactory",
+                    "method": "createRequest",
+                    "index": 2,
+                    "array": "Content-Type"
+                }
+            ]
+        }
+    ]
+}
