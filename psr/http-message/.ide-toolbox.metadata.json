@@ -1,0 +1,73 @@
+{
+    "registrar": [
+        {
+            "provider": "http_methods",
+            "language": "php",
+            "signature": [
+                "Psr\\Http\\Message\\RequestInterface::withMethod"
+            ]
+        },
+        {
+            "provider": "http_request_headers",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Psr\\Http\\Message\\RequestInterface",
+                    "method": "getHeader"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\RequestInterface",
+                    "method": "withoutHeader"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\RequestInterface",
+                    "method": "getHeaderLine"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\RequestInterface",
+                    "method": "withHeader",
+                    "index": 1
+                },
+                {
+                    "class": "Psr\\Http\\Message\\RequestInterface",
+                    "method": "withAddedHeader",
+                    "index": 1
+                },
+                {
+                    "class": "Psr\\Http\\Message\\RequestInterface",
+                    "method": "hasHeader"
+                }
+            ]
+        },
+        {
+            "provider": "http_response_headers",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Psr\\Http\\Message\\ResponseInterface",
+                    "method": "getHeader"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\ResponseInterface",
+                    "method": "withoutHeader"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\ResponseInterface",
+                    "method": "getHeaderLine"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\ResponseInterface",
+                    "method": "withHeader"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\ResponseInterface",
+                    "method": "withAddedHeader"
+                },
+                {
+                    "class": "Psr\\Http\\Message\\ResponseInterface",
+                    "method": "hasHeader"
+                }
+            ]
+        }
+    ]
+}
