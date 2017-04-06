@@ -88,6 +88,17 @@
             ]
         },
         {
+            "provider": "class",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Twig_Environment",
+                    "method": "getRuntime",
+                    "type": "type"
+                }
+            ]
+        },
+        {
             "provider": "twig.template_classes",
             "language": "php",
             "signature": [
@@ -114,7 +125,7 @@
             "name": "twig.template_classes",
             "source": {
                 "contributor": "sub_classes",
-                "parameter": "Twig_TemplateInterface"
+                "parameter": "Twig_Template"
             }
         },
         {
@@ -144,6 +155,11 @@
                     "lookup_string": "html_attr",
                     "icon": "com.intellij.util.PlatformIcons.CLASS_INITIALIZER",
                     "target": "twig_escape_filter"
+                },
+                {
+                    "lookup_string": "name",
+                    "icon": "com.intellij.icons.AllIcons$FileTypes.Unknown",
+                    "target": "Twig_FileExtensionEscapingStrategy"
                 },
                 {
                     "lookup_string": "filename",
@@ -176,7 +192,7 @@
                 {
                     "lookup_string": "cache",
                     "tail_text": " => false",
-                    "type_text": "string|false"
+                    "type_text": "Twig_CacheInterface|string|false"
                 },
                 {
                     "lookup_string": "auto_reload",
@@ -191,7 +207,7 @@
                 {
                     "lookup_string": "autoescape",
                     "tail_text": " => 'html'",
-                    "type_text": "string|boolean"
+                    "type_text": "callable|string|boolean"
                 },
                 {
                     "lookup_string": "optimizations",
