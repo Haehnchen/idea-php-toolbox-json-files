@@ -89,22 +89,12 @@
                 },
                 {
                     "class": "PHPUnit\\Framework\\TestCase",
-                    "method": "getMock",
-                    "type": "type"
-                },
-                {
-                    "class": "PHPUnit\\Framework\\TestCase",
                     "method": "getMockForAbstractClass",
                     "type": "type"
                 },
                 {
                     "class": "PHPUnit\\Framework\\TestCase",
                     "method": "getMockForTrait",
-                    "type": "type"
-                },
-                {
-                    "class": "PHPUnit\\Framework\\TestCase",
-                    "method": "getMockWithoutInvokingTheOriginalConstructor",
                     "type": "type"
                 }
             ]
