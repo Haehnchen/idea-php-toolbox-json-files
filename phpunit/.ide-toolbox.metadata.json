@@ -13,23 +13,17 @@
                 "PHPUnit_Framework_Assert::assertContainsOnlyInstancesOf",
                 "PHPUnit_Framework_Assert::assertInstanceOf",
                 "PHPUnit_Framework_Assert::assertNotInstanceOf",
-
                 "PHPUnit_Framework_Assert::isInstanceOf",
                 "PHPUnit_Framework_Assert::containsOnlyInstancesOf",
                 "PHPUnit_Framework_Constraint_TraversableContainsOnly::__construct",
-
                 "PHPUnit_Framework_TestCase::createMock",
                 "PHPUnit_Framework_TestCase::getMock",
                 "PHPUnit_Framework_TestCase::getMockBuilder",
                 "PHPUnit_Framework_TestCase::getMockForAbstractClass",
-                "PHPUnit_Framework_TestCase::getMockForTrait",
                 "PHPUnit_Framework_TestCase::getMockWithoutInvokingTheOriginalConstructor",
-
                 "PHPUnit_Framework_TestCase::getStaticAttribute",
                 "PHPUnit_Framework_TestCase::readAttribute",
-
                 "PHPUnit_Framework_TestCase::prophesize",
-
                 "PHPUnit\\Framework\\Assert::assertAttributeInstanceOf",
                 "PHPUnit\\Framework\\Assert::assertAttributeNotInstanceOf",
                 "PHPUnit\\Framework\\Assert::assertClassHasAttribute:1",
@@ -39,21 +33,18 @@
                 "PHPUnit\\Framework\\Assert::assertContainsOnlyInstancesOf",
                 "PHPUnit\\Framework\\Assert::assertInstanceOf",
                 "PHPUnit\\Framework\\Assert::assertNotInstanceOf",
-
                 "PHPUnit\\Framework\\Assert::isInstanceOf",
                 "PHPUnit\\Framework\\Assert::containsOnlyInstancesOf",
                 "PHPUnit\\Framework\\Constraint\\TraversableContainsOnly::__construct",
-
                 "PHPUnit\\Framework\\TestCase::createMock",
-                "PHPUnit\\Framework\\TestCase::getMock",
+                "PHPUnit\\Framework\\TestCase::createTestProxy",
+                "PHPUnit\\Framework\\TestCase::createPartialMock",
+                "PHPUnit\\Framework\\TestCase::createConfiguredMock",
                 "PHPUnit\\Framework\\TestCase::getMockBuilder",
+                "PHPUnit\\Framework\\TestCase::getMockClass",
                 "PHPUnit\\Framework\\TestCase::getMockForAbstractClass",
-                "PHPUnit\\Framework\\TestCase::getMockForTrait",
-                "PHPUnit\\Framework\\TestCase::getMockWithoutInvokingTheOriginalConstructor",
-
                 "PHPUnit\\Framework\\TestCase::getStaticAttribute",
                 "PHPUnit\\Framework\\TestCase::readAttribute",
-
                 "PHPUnit\\Framework\\TestCase::prophesize"
             ],
             "signatures": [
@@ -74,11 +65,6 @@
                 },
                 {
                     "class": "PHPUnit_Framework_TestCase",
-                    "method": "getMockForTrait",
-                    "type": "type"
-                },
-                {
-                    "class": "PHPUnit_Framework_TestCase",
                     "method": "getMockWithoutInvokingTheOriginalConstructor",
                     "type": "type"
                 },
@@ -89,12 +75,22 @@
                 },
                 {
                     "class": "PHPUnit\\Framework\\TestCase",
-                    "method": "getMockForAbstractClass",
+                    "method": "createTestProxy",
                     "type": "type"
                 },
                 {
                     "class": "PHPUnit\\Framework\\TestCase",
-                    "method": "getMockForTrait",
+                    "method": "createPartialMock",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "createConfiguredMock",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "getMockForAbstractClass",
                     "type": "type"
                 }
             ]
@@ -104,12 +100,24 @@
             "provider": "trait",
             "signature": [
                 "PHPUnit_Framework_TestCase::getObjectForTrait",
-                "PHPUnit\\Framework\\TestCase::getObjectForTrait"
+                "PHPUnit_Framework_TestCase::getMockForTrait",
+                "PHPUnit\\Framework\\TestCase::getObjectForTrait",
+                "PHPUnit\\Framework\\TestCase::getMockForTrait"
             ],
             "signatures": [
                 {
                     "class": "PHPUnit_Framework_TestCase",
+                    "method": "getMockForTrait",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit_Framework_TestCase",
                     "method": "getObjectForTrait",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "getMockForTrait",
                     "type": "type"
                 },
                 {
@@ -124,7 +132,7 @@
             "provider": "exception_classes",
             "signature": [
                 "PHPUnit_Framework_TestCase::setExpectedException",
-                "PHPUnit\\Framework\\TestCase::setExpectedException"
+                "PHPUnit\\Framework\\TestCase::expectException"
             ]
         },
         {
@@ -139,13 +147,10 @@
                 "PHPUnit_Framework_Assert::assertNotAttributeInternalType",
                 "PHPUnit_Framework_Assert::assertNotContainsOnly",
                 "PHPUnit_Framework_Assert::assertNotInternalType",
-
                 "PHPUnit_Framework_Assert::containsOnly",
                 "PHPUnit_Framework_Constraint_TraversableContainsOnly::__construct",
-
                 "PHPUnit_Framework_Assert::isType",
                 "PHPUnit_Framework_Constraint_IsType::__construct",
-
                 "PHPUnit\\Framework\\Assert::assertAttributeInternalType",
                 "PHPUnit\\Framework\\Assert::assertAttributeContainsOnly",
                 "PHPUnit\\Framework\\Assert::assertAttributeNotContainsOnly",
@@ -154,10 +159,8 @@
                 "PHPUnit\\Framework\\Assert::assertNotAttributeInternalType",
                 "PHPUnit\\Framework\\Assert::assertNotContainsOnly",
                 "PHPUnit\\Framework\\Assert::assertNotInternalType",
-
                 "PHPUnit\\Framework\\Assert::containsOnly",
                 "PHPUnit\\Framework\\Constraint\\TraversableContainsOnly::__construct",
-
                 "PHPUnit\\Framework\\Assert::isType",
                 "PHPUnit\\Framework\\Constraint\\IsType::__construct"
             ]
