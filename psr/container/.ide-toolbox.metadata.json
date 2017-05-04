@@ -1,0 +1,15 @@
+{
+    "registrar": [
+        {
+            "provider": "class",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Psr\\Container\\ContainerInterface",
+                    "method": "get",
+                    "type": "type"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "registrar": [
+        {
+            "provider": "class",
+            "language": "php",
+            "signatures": [
+                {
+                    "class": "Zend\\ServiceManager\\ServiceLocatorInterface",
+                    "method": "get",
+                    "type": "type"
+                }
+            ]
+        }
+    ]
+}
