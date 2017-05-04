@@ -28,7 +28,33 @@
                 "PHPUnit_Framework_TestCase::getStaticAttribute",
                 "PHPUnit_Framework_TestCase::readAttribute",
 
-                "PHPUnit_Framework_TestCase::prophesize"
+                "PHPUnit_Framework_TestCase::prophesize",
+
+                "PHPUnit\\Framework\\Assert::assertAttributeInstanceOf",
+                "PHPUnit\\Framework\\Assert::assertAttributeNotInstanceOf",
+                "PHPUnit\\Framework\\Assert::assertClassHasAttribute:1",
+                "PHPUnit\\Framework\\Assert::assertClassHasStaticAttribute:1",
+                "PHPUnit\\Framework\\Assert::assertClassNotHasAttribute:1",
+                "PHPUnit\\Framework\\Assert::assertClassNotHasStaticAttribute:1",
+                "PHPUnit\\Framework\\Assert::assertContainsOnlyInstancesOf",
+                "PHPUnit\\Framework\\Assert::assertInstanceOf",
+                "PHPUnit\\Framework\\Assert::assertNotInstanceOf",
+
+                "PHPUnit\\Framework\\Assert::isInstanceOf",
+                "PHPUnit\\Framework\\Assert::containsOnlyInstancesOf",
+                "PHPUnit\\Framework\\Constraint\\TraversableContainsOnly::__construct",
+
+                "PHPUnit\\Framework\\TestCase::createMock",
+                "PHPUnit\\Framework\\TestCase::getMock",
+                "PHPUnit\\Framework\\TestCase::getMockBuilder",
+                "PHPUnit\\Framework\\TestCase::getMockForAbstractClass",
+                "PHPUnit\\Framework\\TestCase::getMockForTrait",
+                "PHPUnit\\Framework\\TestCase::getMockWithoutInvokingTheOriginalConstructor",
+
+                "PHPUnit\\Framework\\TestCase::getStaticAttribute",
+                "PHPUnit\\Framework\\TestCase::readAttribute",
+
+                "PHPUnit\\Framework\\TestCase::prophesize"
             ],
             "signatures": [
                 {
@@ -55,6 +81,31 @@
                     "class": "PHPUnit_Framework_TestCase",
                     "method": "getMockWithoutInvokingTheOriginalConstructor",
                     "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "createMock",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "getMock",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "getMockForAbstractClass",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "getMockForTrait",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
+                    "method": "getMockWithoutInvokingTheOriginalConstructor",
+                    "type": "type"
                 }
             ]
         },
@@ -62,11 +113,17 @@
             "language": "php",
             "provider": "trait",
             "signature": [
-                "PHPUnit_Framework_TestCase::getObjectForTrait"
+                "PHPUnit_Framework_TestCase::getObjectForTrait",
+                "PHPUnit\\Framework\\TestCase::getObjectForTrait"
             ],
             "signatures": [
                 {
                     "class": "PHPUnit_Framework_TestCase",
+                    "method": "getObjectForTrait",
+                    "type": "type"
+                },
+                {
+                    "class": "PHPUnit\\Framework\\TestCase",
                     "method": "getObjectForTrait",
                     "type": "type"
                 }
@@ -76,7 +133,8 @@
             "language": "php",
             "provider": "exception_classes",
             "signature": [
-                "PHPUnit_Framework_TestCase::setExpectedException"
+                "PHPUnit_Framework_TestCase::setExpectedException",
+                "PHPUnit\\Framework\\TestCase::setExpectedException"
             ]
         },
         {
@@ -97,6 +155,21 @@
 
                 "PHPUnit_Framework_Assert::isType",
                 "PHPUnit_Framework_Constraint_IsType::__construct",
+
+                "PHPUnit\\Framework\\Assert::assertAttributeInternalType",
+                "PHPUnit\\Framework\\Assert::assertAttributeContainsOnly",
+                "PHPUnit\\Framework\\Assert::assertAttributeNotContainsOnly",
+                "PHPUnit\\Framework\\Assert::assertContainsOnly",
+                "PHPUnit\\Framework\\Assert::assertInternalType",
+                "PHPUnit\\Framework\\Assert::assertNotAttributeInternalType",
+                "PHPUnit\\Framework\\Assert::assertNotContainsOnly",
+                "PHPUnit\\Framework\\Assert::assertNotInternalType",
+
+                "PHPUnit\\Framework\\Assert::containsOnly",
+                "PHPUnit\\Framework\\Constraint\\TraversableContainsOnly::__construct",
+
+                "PHPUnit\\Framework\\Assert::isType",
+                "PHPUnit\\Framework\\Constraint\\IsType::__construct"
             ]
         }
     ]
