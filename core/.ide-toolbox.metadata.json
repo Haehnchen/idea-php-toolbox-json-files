@@ -106,6 +106,17 @@
                 "DateTimeZone:__construct",
                 "timezone_open"
             ]
+        },
+        {
+            "provider": "hash_algos",
+            "language": "php",
+            "signature": [
+                "hash",
+                "hash_file",
+                "hash_hkdf",
+                "hash_init",
+                "hash_pbkdf2"
+            ]
         }
     ],
     "providers": [
@@ -623,6 +634,219 @@
             "Pacific/Wallis",
             "UTC"
           ]
+        },
+        {
+            "name": "hash_algos",
+            "items": [
+                {
+                    "lookup_string": "md2",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "md4",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "md5",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "sha1",
+                    "type_text": "40 chars"
+                },
+                {
+                    "lookup_string": "sha224",
+                    "type_text": "56 chars"
+                },
+                {
+                    "lookup_string": "sha256",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "sha384",
+                    "type_text": "96 chars"
+                },
+                {
+                    "lookup_string": "sha512/224",
+                    "type_text": "56 chars"
+                },
+                {
+                    "lookup_string": "sha512/256",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "sha512",
+                    "type_text": "128 chars"
+                },
+                {
+                    "lookup_string": "sha3-224",
+                    "type_text": "56 chars"
+                },
+                {
+                    "lookup_string": "sha3-256",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "sha3-384",
+                    "type_text": "96 chars"
+                },
+                {
+                    "lookup_string": "sha3-512",
+                    "type_text": "128 chars"
+                },
+                {
+                    "lookup_string": "ripemd128",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "ripemd160",
+                    "type_text": "40 chars"
+                },
+                {
+                    "lookup_string": "ripemd256",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "ripemd320",
+                    "type_text": "80 chars"
+                },
+                {
+                    "lookup_string": "whirlpool",
+                    "type_text": "128 chars"
+                },
+                {
+                    "lookup_string": "tiger128,3",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "tiger160,3",
+                    "type_text": "40 chars"
+                },
+                {
+                    "lookup_string": "tiger192,3",
+                    "type_text": "48 chars"
+                },
+                {
+                    "lookup_string": "tiger128,4",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "tiger160,4",
+                    "type_text": "40 chars"
+                },
+                {
+                    "lookup_string": "tiger192,4",
+                    "type_text": "48 chars"
+                },
+                {
+                    "lookup_string": "snefru",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "snefru256",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "gost",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "gost-crypto",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "adler32",
+                    "type_text": "8 chars"
+                },
+                {
+                    "lookup_string": "crc32",
+                    "type_text": "8 chars"
+                },
+                {
+                    "lookup_string": "crc32b",
+                    "type_text": "8 chars"
+                },
+                {
+                    "lookup_string": "fnv132",
+                    "type_text": "8 chars"
+                },
+                {
+                    "lookup_string": "fnv1a32",
+                    "type_text": "8 chars"
+                },
+                {
+                    "lookup_string": "fnv164",
+                    "type_text": "16 chars"
+                },
+                {
+                    "lookup_string": "fnv1a64",
+                    "type_text": "16 chars"
+                },
+                {
+                    "lookup_string": "joaat",
+                    "type_text": "8 chars"
+                },
+                {
+                    "lookup_string": "haval128,3",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "haval160,3",
+                    "type_text": "40 chars"
+                },
+                {
+                    "lookup_string": "haval192,3",
+                    "type_text": "48 chars"
+                },
+                {
+                    "lookup_string": "haval224,3",
+                    "type_text": "56 chars"
+                },
+                {
+                    "lookup_string": "haval256,3",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "haval128,4",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "haval160,4",
+                    "type_text": "40 chars"
+                },
+                {
+                    "lookup_string": "haval192,4",
+                    "type_text": "48 chars"
+                },
+                {
+                    "lookup_string": "haval224,4",
+                    "type_text": "56 chars"
+                },
+                {
+                    "lookup_string": "haval256,4",
+                    "type_text": "64 chars"
+                },
+                {
+                    "lookup_string": "haval128,5",
+                    "type_text": "32 chars"
+                },
+                {
+                    "lookup_string": "haval160,5",
+                    "type_text": "40 chars"
+                },
+                {
+                    "lookup_string": "haval192,5",
+                    "type_text": "48 chars"
+                },
+                {
+                    "lookup_string": "haval224,5",
+                    "type_text": "56 chars"
+                },
+                {
+                    "lookup_string": "haval256,5",
+                    "type_text": "64 chars"
+                }
+            ]
         }
     ]
 }
