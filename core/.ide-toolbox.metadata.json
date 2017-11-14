@@ -111,7 +111,11 @@
             "provider": "hash_algos",
             "language": "php",
             "signature": [
-                "hash"
+                "hash",
+                "hash_file",
+                "hash_hkdf",
+                "hash_init",
+                "hash_pbkdf2"
             ]
         }
     ],
