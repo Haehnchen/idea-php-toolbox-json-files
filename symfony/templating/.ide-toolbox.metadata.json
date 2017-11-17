@@ -1,0 +1,22 @@
+{
+    "registrar": [
+        {
+            "provider": "symfony_templating_escapers",
+            "language": "php",
+            "signature": [
+                "Symfony\\Component\\Templating\\PhpEngine:getEscaper",
+                "Symfony\\Component\\Templating\\PhpEngine:setEscaper",
+                "Symfony\\Component\\Templating\\PhpEngine:escape:1"
+            ]
+        }
+    ],
+    "providers": [
+        {
+            "name": "symfony_templating_escapers",
+            "lookup_strings": [
+                "html",
+                "js"
+            ]
+        }
+    ]
+}
