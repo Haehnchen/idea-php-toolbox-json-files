@@ -37,6 +37,30 @@
                     "icon": "com.jetbrains.php.PhpIcons.CLASS",
                     "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
                     "target": "Symfony\\Component\\Config\\Definition\\Builder\\VariableNodeDefinition"
+                },
+                {
+                    "lookup_string": "boolean",
+                    "icon": "com.jetbrains.php.PhpIcons.CLASS",
+                    "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "target": "Symfony\\Component\\Config\\Definition\\Builder\\BooleanNodeDefinition"
+                },
+                {
+                    "lookup_string": "integer",
+                    "icon": "com.jetbrains.php.PhpIcons.CLASS",
+                    "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "target": "Symfony\\Component\\Config\\Definition\\Builder\\IntegerNodeDefinition"
+                },
+                {
+                    "lookup_string": "float",
+                    "icon": "com.jetbrains.php.PhpIcons.CLASS",
+                    "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "target": "Symfony\\Component\\Config\\Definition\\Builder\\FloatNodeDefinition"
+                },
+                {
+                    "lookup_string": "enum",
+                    "icon": "com.jetbrains.php.PhpIcons.CLASS",
+                    "type": "Symfony\\Component\\Config\\Definition\\Builder\\ArrayNodeDefinition",
+                    "target": "Symfony\\Component\\Config\\Definition\\Builder\\EnumNodeDefinition"
                 }
             ]
         }
