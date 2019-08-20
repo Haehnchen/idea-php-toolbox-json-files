@@ -88,7 +88,8 @@
             "signature": [
                 "fopen:1",
                 "popen:1",
-                "SplFileInfo:openFile"
+                "SplFileInfo:openFile",
+                "SplFileObject:__construct:1"
             ]
         },
         {
