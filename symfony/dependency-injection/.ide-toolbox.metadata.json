@@ -1,0 +1,38 @@
+{
+    "registrar": [
+        {
+            "language": "php",
+            "provider": "class_interface",
+            "signatures": [
+                {
+                    "class": "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+                    "method": "getReflectionClass"
+                },
+                {
+                    "class": "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+                    "method": "registerForAutoconfiguration"
+                }
+            ]
+        },
+        {
+            "language": "php",
+            "provider": "class",
+            "signatures": [
+                {
+                    "class": "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+                    "method": "register",
+                    "index": 1
+                },
+                {
+                    "class": "Symfony\\Component\\DependencyInjection\\ContainerBuilder",
+                    "method": "autowire",
+                    "index": 1
+                },
+                {
+                    "class": "Symfony\\Component\\DependencyInjection\\Definition",
+                    "method": "__construct"
+                }
+            ]
+        }
+    ]
+}
